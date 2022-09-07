@@ -1,0 +1,29 @@
+.watched-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 5px;
+    max-width: 100%;
+  }
+}
+
+.item-watched {
+  @media screen and (max-width: 767.98px) {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
